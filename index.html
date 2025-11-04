@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>David Dai — Research & Projects</title>
+  <title>David (Yunlang) Dai — Research & Projects</title>
   <meta name="description" content="Personal homepage for David Dai: research interests, projects, activities, and contact." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" />
@@ -11,7 +11,7 @@
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a href="#home" class="brand">David Dai</a>
+      <a href="#home" class="brand">David (Yunlang) Dai</a>
       <div class="links">
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
@@ -51,84 +51,97 @@
 
           <div class="cta">
             <a class="btn" href="#research">Research</a>
-            <a class="btn outline" href="#projects">Projects</a>
+            <a class="btn" href="#projects">Projects</a>
           </div>
         </div>
 
         <div class="intro-photo">
           <!-- Replace 'photo.jpg' with your image file -->
-          <img src="selfie.jpeg" alt="Portrait of David Dai" />
+          <img src="selfie.png" alt="Portrait of David Dai" />
         </div>
       </div>
     </section>
 
     <!-- RESEARCH BEFORE PROJECTS -->
     <section id="research" class="section">
-      <h2>Research Interests</h2>
-      <ul class="bullets">
-        <li>
-          <strong>Experience as Intelligence:</strong>
-          Building systems that accumulate and leverage experience to enable adaptive, personalized behavior.
-        </li>
-        <li>
-          <strong>Population ↔ Individual:</strong>
-          Blending <em>structured, population-level</em> statistics with <em>unstructured, interaction-level</em> data to
-          generalize broadly yet personalize to users.
-        </li>
-        <li>
-          <strong>Methods:</strong>
-          Statistical inference, deep learning, and reinforcement learning for memory, adaptation, and evaluation.
-        </li>
-      </ul>
+      <h2>Research</h2>
+
+      <div class="research-entry">
+        <h3>LLM Moderation Auditing and Steering — Haverford College</h3>
+        <p class="meta">Advisor: Prof. Sorelle Friedler & Prof. Danaé Metaxa</p>
+        <ul>
+          <li>Developing large-scale auditing pipelines to study how language models shift moderation behavior over time.</li>
+          <li>Built <a href="https://genaiaudits.github.io" target="_blank" rel="noopener">genAIaudits.github.io</a> for longitudinal monitoring of acceptable speech boundaries.</li>
+          <li>Co-author on <a href="https://arxiv.org/abs/2510.01255" target="_blank" rel="noopener"><em>Longitudinal Monitoring of LLM Content Moderation of Social Issues</em></a> (CHI 2026 submission in preparation).</li>
+          <li>Senior thesis: designing interpretable concept-based steering methods to adjust model moderation stance while preserving semantic fidelity.</li>
+        </ul>
+      </div>
+
+      <div class="research-entry">
+        <h3>Human-Centered AI in Education — University of Pennsylvania</h3>
+        <p class="meta">Advisors: Prof. Ryan Baker & Dr. Anthony Botelho</p>
+        <ul>
+          <li>Analyzed learner behavior across 200+ MOOCs to identify course-level determinants of dropout.</li>
+          <li>First author on <a href="https://doi.org/10.1145/3698205.3733944" target="_blank" rel="noopener"><em>Understanding MOOC Stopout Patterns: Course and Assessment-Level Insights</em></a>, published at Learning@Scale 2025.</li>
+          <li>Evaluating LLM-based teaching assistants (<a href="https://penntoday.upenn.edu/news/jeepyta-artificial-intelligence-teaching-assistant" target="_blank" rel="noopener">JeepyTA</a>) in live instructional deployments to understand feedback effects on learning.</li>
+          <li>Comparing Bayesian and deep knowledge tracing approaches to model evolving student mastery with interpretable mechanisms.</li>
+        </ul>
+      </div>
+
+      <div class="research-entry">
+        <h3>Automatic Grading Methods — Bryn Mawr College</h3>
+        <p class="meta">Advisor: Dr. Ratnik Gandhi</p>
+        <ul>
+          <li>Reproduced and extended <a href="https://arxiv.org/abs/1905.09916" target="_blank" rel="noopener">generative grading models</a> to small transformer-based architectures for multimodal assessment.</li>
+          <li>Built a probabilistic data simulator to support evaluation across both text and visual student responses.</li>
+          <li><a href="https://github.com/davidhhhhhhh/research_2024.git" target="_blank" rel="noopener">Source Code</a></li>
+        </ul>
+      </div>
     </section>
 
     <section id="projects" class="section">
       <h2>Selected Projects</h2>
       <div class="grid">
-        <article class="card">
-          <h3>MOOC Stop-out Modeling (L@S 2025)</h3>
-          <p>
-            Analyzed course features that influence student stop-out; demonstrated population-level patterns with individual-level implications.
-          </p>
-          <p class="meta">Python • Statistics • Learning Analytics</p>
-          <p>
-            <a href="#" target="_blank" rel="noopener">Paper</a> ·
-            <a href="#" target="_blank" rel="noopener">Code</a>
-          </p>
-        </article>
 
         <article class="card">
           <h3>Confusion Bank</h3>
+          <p>An AI study companion that identifies and resurfaces a learner's confusion points from historical conversation data. Built as a solo project for HackMIT 2025.</p>
+          <p class="meta">Full Stack · LLMs · Retrieval</p>
           <p>
-            An AI study companion that remembers learner questions and resurfaces them before exams for personalized review.
-          </p>
-          <p class="meta">LLMs • Retrieval • LangGraph</p>
-          <p>
-            <a href="#" target="_blank" rel="noopener">Repo</a> ·
-            <a href="#" target="_blank" rel="noopener">Demo</a>
+            <a href="https://github.com/davidhhhhhhh/confusion_bank" target="_blank" rel="noopener">Code</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://youtu.be/k3ve7OvaASo" target="_blank" rel="noopener">Demo</a>
           </p>
         </article>
 
         <article class="card">
-          <h3>LLM Moderation Auditing</h3>
+          <h3>PA Solar Energy Snapshot</h3>
+          <p>Led a data engineering project for the Philadelphia Solar Energy Association to automate data ingestion and deploy public-facing interactive dashboards.</p>
+          <p class="meta">Data Pipeline · Dashboards · PraxIS</p>
           <p>
-            Longitudinal auditing pipeline and website to analyze moderation behavior across systems, focusing on acceptable speech.
-          </p>
-          <p class="meta">Evaluation • Safety • Full-stack</p>
-          <p>
-            <a href="#" target="_blank" rel="noopener">Site</a> ·
-            <a href="#" target="_blank" rel="noopener">Code</a>
+            <a href="https://www.phillysolar.org/pa-solar-energy-snapshot" target="_blank" rel="noopener">Site</a>
           </p>
         </article>
+
+        <article class="card">
+          <h3>Intelligent Tutoring System</h3>
+          <p>Designed and implemented an intelligent tutor for JavaScript using the CTAT framework as part of the Carnegie Mellon University LearnLab Summer School.</p>
+          <p class="meta">ITS · Skill Modeling · CTAT</p>
+          <p>
+            <a href="https://github.com/davidhhhhhhh/js-ITS" target="_blank" rel="noopener">Code</a>
+          </p>
+        </article>
+
       </div>
     </section>
 
     <section id="activities" class="section">
       <h2>Activities & Leadership</h2>
       <ul class="bullets">
-        <li>Tencent RL Competition — PPO-GRU agent in a POMDP; top award in undergraduate track.</li>
-        <li>AI auditing project — longitudinal pipeline & interactive website.</li>
-        <li>Hackathons & student leadership — selected education/AI projects and mentoring.</li>
+        <li><strong>Gold Prize, Tencent AI Arena Global Open (2025):</strong> Led a team to develop a PPO-GRU agent for a POMDP environment, placing in the top 1.6% of 1000+ undergraduate teams.</li>
+        <li><strong>Top Prize, DataFest Philly (2025):</strong> Led a team in analyzing commercial leasing trends post-pandemic, awarded for innovative use of external data sources.</li>
+        <li><strong>Data Analyst Intern, Roundhouse One (2024):</strong> Modeled HVAC effects on indoor environmental quality across 200+ K–12 schools in Hawaii using statistical and causal inference methods.</li>
+        <li><strong>Senior Thesis in Mathematics:</strong> Developing theoretical results on the Poisson binomial distribution and its extensions to sequentially dependent trials.</li>
       </ul>
     </section>
 
@@ -136,13 +149,11 @@
       <h2>CV & Contact</h2>
       <p><a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></p>
       <p class="links-row">
-        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="mailto:ddai@haverford.edu">ddai@haverford.edu</a>
         <span aria-hidden="true">·</span>
-        <a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/davidhhhhhhh" target="_blank" rel="noopener">GitHub</a>
         <span aria-hidden="true">·</span>
-        <a href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
-        <span aria-hidden="true">·</span>
-        <a href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/david-dai-2b099b267/" target="_blank" rel="noopener">LinkedIn</a>
       </p>
     </section>
   </main>

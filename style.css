@@ -59,7 +59,7 @@ h3 { font-size: 1.1rem; }
   transition: background .15s ease;
 }
 .btn:hover { background: #efefef; }
-.btn.outline { background: #fff; }
+.btn.outline { background: #f8f8f8; }
 
 /* Lists & grids */
 .bullets { padding-left: 1.1rem; }
@@ -87,5 +87,6 @@ h3 { font-size: 1.1rem; }
   .site-header, .site-footer, .card { border-color: #222; background: #111; }
   .btn { background: #161616; border-color: #2a2a2a; }
   .btn:hover { background: #1d1d1d; }
+  .btn.outline { background: #1d1d1d; border-color: #2a2a2a; }
   .meta { color: #bdbdbd; }
 }
